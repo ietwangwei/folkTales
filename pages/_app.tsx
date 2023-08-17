@@ -1,11 +1,20 @@
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { NextUIProvider } from "@nextui-org/react";
+import Layout from "./components/Layout";
+import './global.css';
 import '../assets/styles/index.scss'
-import {NextUIProvider} from '@nextui-org/react'
 
-export default function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <NextUIProvider>
-      <Component {...pageProps} />
-    </NextUIProvider>
+    <NextThemesProvider defaultTheme="system" attribute="class">
+      <NextUIProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </NextUIProvider>
+    </NextThemesProvider>
   );
 }
+
+export default MyApp;
