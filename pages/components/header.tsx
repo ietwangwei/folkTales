@@ -18,11 +18,11 @@ export default function Header(props: props) {
     }
   };
   return (
-    <div className="h-16 flex items-center bg-[#131415] justify-between text-white px-6 text-[18px]">
+    <div className="h-16 flex items-center bg-[#131415] justify-between text-white px-20 text-[18px]">
       <div className="logo">Folktale</div>
       <div className="user flex items-center justify-between">
         <Search
-          style={{ width: "120px" }}
+          style={{ width: "120px", color: '#000' }}
           className="header-search"
           placeholder="Search"
           isClearable
