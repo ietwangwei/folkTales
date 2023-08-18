@@ -18,9 +18,9 @@ export default function Header(props: props) {
     }
   };
   return (
-    <div className="header">
+    <div className="h-16 flex items-center bg-[#131415] justify-between text-white px-6 text-[18px]">
       <div className="logo">Folktale</div>
-      <div className="user">
+      <div className="user flex items-center justify-between">
         <Search
           style={{ width: "120px" }}
           className="header-search"
@@ -29,7 +29,7 @@ export default function Header(props: props) {
           startContent={
             <FontAwesomeIcon
               icon={faSearch}
-              style={{ fontSize: 16, color: "#000", cursor: "pointer" }}
+              className="text-[16px] text-[#000] cursor-pointer"
             />
           }
           onKeyDown={handleKeyDown}
@@ -41,7 +41,7 @@ export default function Header(props: props) {
           }}
         ></Search>
         <User
-          className="user"
+          className="user ml-2"
           name={props.username}
           description={props.description}
           avatarProps={{
