@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import Layout from "./components/Layout";
-import Header from "./components/header/header";
+import Header from "./components/header";
 
 export default function index() {
     return(
