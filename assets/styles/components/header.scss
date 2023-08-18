@@ -11,14 +11,11 @@
 
     .header-search {
         color: #000;
-        width: 100px;
+    }
 
-        input:focus {
-            width: 120px;
-        }
-
-        input:focus-within {
-            width: 100px;
-        }
+    .user {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
     }
 }

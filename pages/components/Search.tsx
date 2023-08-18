@@ -2,7 +2,6 @@ import { Input, InputProps } from "@nextui-org/react";
 
 export default function Search(props: InputProps) {
   return (
-    <div className="search">
       <Input
         radius={props.radius}
         type={props.type}
@@ -18,6 +17,5 @@ export default function Search(props: InputProps) {
         onChange={props.onChange}
         onClear={props.onClear}
       />
-    </div>
   );
 }
