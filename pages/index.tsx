@@ -91,7 +91,6 @@ function genreBooks(len: number, books: FolkBook[][]) {
 }
 
 const books = genreBooks(4, []);
-console.log(books);
 
 const FolkBook = (props: FolkBook) => {
   return (
@@ -117,7 +116,6 @@ export default function index() {
   };
   return (
     <div className="home bg-[#202020] text-[#fff]">
-      <Header username="Wei" description="A frontend developer"></Header>
       <div className="home-container px-20 py-16">
         <div className="section flex justify-between">
           <div className="topics w-3/5 h-[300px]">
